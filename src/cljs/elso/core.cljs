@@ -7,15 +7,6 @@
     [clerk.core :as clerk]
     [accountant.core :as accountant]))
 
-
-
-
-
-
-
-
-
-
 ;; -------------------------
 ;; gombok létrehozása
 (def actual-theme (atom "dark-theme"))
@@ -25,9 +16,6 @@
        {:on-click
         (fn [katt] (reset! actual-theme theme))}
        label])
-
-
-
 
 (defn gombok []
       [:div
@@ -73,7 +61,7 @@
 
 
 
-(defn items-page []
+(defn items-page [])
 
 
 
