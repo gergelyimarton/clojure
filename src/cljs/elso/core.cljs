@@ -29,7 +29,7 @@
 (defn home-page []
   (fn []
     [:span.main
-     [:h1 "Cső te gőte"]
+     [:h1 "Cső tiuiugute"]
      [:ul
       [:li [:a {:href (path-for :items)} "Items of elso"]]
       [:li [:a {:href "/broken/link"} "Broken link"]]]]))
