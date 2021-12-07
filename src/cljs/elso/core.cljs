@@ -39,6 +39,7 @@
 (defn items-page []
   (fn []
     [:span.main
+     [:h1 "The items of elsouohhouiohuiohou"]
      [:ul (map (fn [item-id]
                  [:li {:name (str "item-" item-id) :key (str "item-" item-id)}
                   [:a {:href (path-for :item {:item-id item-id})} "Item: " item-id]])
