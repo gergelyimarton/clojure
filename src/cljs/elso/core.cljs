@@ -19,7 +19,7 @@
 
 (defn gombok []
       [:div
-       [:div @actual-theme]
+       ;[:div @actual-theme]
        [:div.gombok
 
         [gomb "light-theme" "Light theme"]

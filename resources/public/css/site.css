@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
   margin: 0px;
 }
 
 .page-container {
-  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Verdana, Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   margin: 0 auto;
@@ -16,18 +18,19 @@ body {
 }
 
 .page-inner{
-
 max-width: 640px;
 }
 
 .dark-theme{
   color: #fff;
   background: #221;
-
+  transition: 0.3s background ease-in-out;
 }
 .light-theme{
   color: #000;
   background: #FFE695;
+  transition: 0.3s background ease-in-out;
+
 
 }
 
