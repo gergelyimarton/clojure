@@ -1,11 +1,13 @@
-(ns elso.nasa
+(ns elso.feladatok
   (:require [reagent.core :as reagent :refer [atom]]))
+;/////////   next task   //////////////////////////////////////////////////////////////////////////
 
 
 
 
 
 
+;/////////   NASA   //////////////////////////////////////////////////////////////////////////
 
 ;Ági a NASA-nál dolgozik webfejlesztőként.
 ; Egyik napon a NASA úgy döntött,
@@ -49,8 +51,20 @@
                      :background rgb-color}}])
 
 
+;/////////   prev task   //////////////////////////////////////////////////////////////////////////
 
-(defn user-interface []
+
+
+
+;/////////   Hívások   //////////////////////////////////////////////////////////////////////////
+
+
+
+(defn next-task []
+      [:h4 "(task)"])
+
+
+(defn nasa-feladat []
       [:div
        [:div (konvertal @hex-atom)]
        [color-box (konvertal @hex-atom)]
@@ -58,8 +72,52 @@
                 :on-change (fn [event] (reset! hex-atom (.-value (.-target event))))}]])
 
 
-(defn feladat []
+(defn prev-task []
+      [:h4 "(task)"])
+
+
+(defn feladat [title component]
       [:div
-        [:h1 "nasa feladat"]
-        [user-interface]
-        (konvertal "#FF0077")])
+       [:h2 title]
+       component])
+
+
+
+(defn feladatok []
+      [:div
+       [feladat "prev" [prev-task]]
+       [feladat "nasa" [nasa-feladat]]
+       [feladat "next" [next-task]]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
